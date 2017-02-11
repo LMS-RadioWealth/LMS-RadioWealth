@@ -66,6 +66,6 @@ function ViewCustomer(code) {
     modalDispCustProfMain = $("#DisplayCustomerModal");
     $.get("Customer/FetchCustomerRecordByID", { "Code": code }, function (data) {
         modalDispCustProf.empty().html(data);
-        modalDispCustProfMain.modal();
+        modalDispCustProfMain.modal(); 
     });
 }
